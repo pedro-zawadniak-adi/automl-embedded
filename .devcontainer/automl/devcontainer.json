@@ -5,6 +5,11 @@
 		"context": "../..",
 		"dockerfile": "Dockerfile"
 	},
+	"customizations": {
+		"vscode": {
+			"extensions": ["AnalogDevices.automl-embedded"]
+		}
+	},
 	"containerEnv": {
 		"PYRENODE_PKG": "/opt/renode/renode-latest.pkg.tar.gz"
 	}
