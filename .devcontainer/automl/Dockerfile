@@ -131,5 +131,5 @@ RUN $PIPINST \
     "autoPyTorch @ git+https://github.com/antmicro/auto-pytorch.git@69e3649ef34090e4fb806579858f558a84eb1499" \
     ConfigSpace==1.2.1 \
     smac==1.4.0 \
-    "dts2repl @ git+https://github.com/antmicro/dts2repl@83de3bb32677dc10472c33c4372d0402f1b28911" \
+    # "dts2repl @ git+https://github.com/antmicro/dts2repl@83de3bb32677dc10472c33c4372d0402f1b28911" \
     "pyrfr @ git+https://github.com/antmicro/random-forest-run.git@502afa7d3e0c7591df1cd9ef028a3971177491a0"
