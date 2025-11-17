@@ -55,11 +55,11 @@ In order to install it, go to Extensions, click `Install from VSIX...` and choos
 
 The easiest way to set up the environment for application and AutoML development is to develop inside a container using [Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers).
 
-Sample Docker image definition can be found in [Example project using Kenning Zephyr Runtime](https://github.com/antmicro/kenning-zephyr-runtime-example-app), under [environments/Dockerfile](https://github.com/antmicro/kenning-zephyr-runtime-example-app/blob/main/environments/Dockerfile).
+Sample Docker image definition can be found in this repository, under [.devcontainer/automl/Dockerfile](https://github.com/analogdevicesinc/automl-embedded/blob/main/.devcontainer/automl/Dockerfile).
 
-The Dev Container definition can be found in [.devcontainer/automl/devcontainer.json](https://github.com/antmicro/kenning-zephyr-runtime-example-app/blob/main/.devcontainer/automl/devcontainer.json) (VSCode Dev Container configuration).
+The Dev Container definition can be found in [.devcontainer/automl/devcontainer.json](https://github.com/analogdevicesinc/automl-embedded/blob/main/.devcontainer/automl/devcontainer.json) (VSCode Dev Container configuration).
 
-To start the Dev Container, click the `Reopen in Container` button from the pop-up or run the `DevContainers: Reopen in Container` action.
+To start the Dev Container, open this repository as a folder in VS Code, click the `Reopen in Container` button from the pop-up or run the `DevContainers: Reopen in Container` action.
 
 ![Reopen in container](./images/reopen_container.png)
 
@@ -129,8 +129,8 @@ First, clone the repository:
 
 ```bash
 mkdir workspace && cd workspace
-git clone https://github.com/antmicro/kenning-zephyr-runtime-example-app.git
-cd kenning-zephyr-runtime-example-app/
+git clone https://github.com/analogdevicesinc/automl-embedded.git
+cd automl-embedded/
 ```
 
 Then, open the project in VSCode:
@@ -140,8 +140,6 @@ code .
 ```
 
 Assuming the Dev Container Extension is installed in VSCode, the previously mentioned popup with the `Reopen in Container` button should appear. Accept and wait for the Dev Container to configure.
-
-Once the Dev Container is ready, install the VSCode Extension in the Dev Container.
 
 After plugin installation, open Terminal in VSCode (it will use the environment from the Dev Container) and run the following commands in the root project directory:
 
