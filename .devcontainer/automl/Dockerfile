@@ -12,7 +12,7 @@ RUN wget -O /tmp/requirements.txt https://raw.githubusercontent.com/zephyrprojec
     $PIPINST -r /tmp/requirements.txt && \
     wget -O /tmp/requirements.txt https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/d330e86e033f94c8b0a1a7a3be55c2553713a350/scripts/requirements-run-test.txt && \
     $PIPINST -r /tmp/requirements.txt && \
-    wget -O /tmp/requirements.txt https://raw.githubusercontent.com/antmicro/kenning-zephyr-runtime/refs/heads/main/requirements.txt && \
+    wget -O /tmp/requirements.txt https://raw.githubusercontent.com/antmicro/kenning-zephyr-runtime/79690c0cdf6d08703d2cb4a92e8607457a83937f/requirements.txt && \
     $PIPINST -r /tmp/requirements.txt && \
     rm /tmp/requirements.txt
 
