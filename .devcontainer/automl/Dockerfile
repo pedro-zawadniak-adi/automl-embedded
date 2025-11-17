@@ -12,12 +12,18 @@ RUN wget -O /tmp/requirements.txt https://raw.githubusercontent.com/zephyrprojec
     $PIPINST -r /tmp/requirements.txt && \
     wget -O /tmp/requirements.txt https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/d330e86e033f94c8b0a1a7a3be55c2553713a350/scripts/requirements-run-test.txt && \
     $PIPINST -r /tmp/requirements.txt && \
-    wget -O /tmp/requirements.txt https://raw.githubusercontent.com/antmicro/kenning-zephyr-runtime/79690c0cdf6d08703d2cb4a92e8607457a83937f/requirements.txt && \
-    $PIPINST -r /tmp/requirements.txt && \
+    $PIPINST \
+        cmake \
+        importlib_metadata \
+        pyelftools \
+        pyserial \
+        pytest \
+        pytest-reportlog \
+        west && \
     rm /tmp/requirements.txt
 
 ENV ZEPHYR_SDK_INSTALL_DIR /opt/zephyr-sdk
 ENV ZEPHYR_SDK_PATH /opt/zephyr-sdk
 
 RUN $PIPINST \
-    "kenning[anomaly_detection,iree,tvm,tensorflow,tflite,torch,reports,renode,uart,auto_pytorch] @ git+https://github.com/antmicro/kenning.git"
+    "kenning[anomaly_detection,iree,tvm,tensorflow,tflite,torch,reports,renode,uart,auto_pytorch] @ git+https://github.com/antmicro/kenning.git@6c6d48a8d4846b0e0eeba363da269de1e7ce65c0"
